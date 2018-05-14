@@ -1,51 +1,55 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/styles.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Address Book</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>Address Book</h1>
-          <h3>Add contact</h3>
-          <div class="form-group">
-            <label for="first name">first name</label>
-            <input class="form-control" type="text" id="first-name">
-          </div>
-          <div class="form-group">
-            <label for="last name">last name</label>
-              <input class="form-control" type="text" id="first-name">
-
-          </div>
-          <div class="form-group">
-            <label for="telephone">last name </label>
-            <input class="form-control" type="text" id="first-name">
-
-          </div>
-      </div>
-        <script src="" charset="utf-8"></script>
-      <script src="js/scripts.js"</script>
-
-        </script>
-      </body>
-    </html>
-
-
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Address Book</h1>
+                <h2>Add a contact:</h2>
+                <form id="new-contact">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input class="form-control" type="text" id="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input class="form-control"  type="text" id="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input class="form-control"  type="text" id="phone-number">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Add contact</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>All Contacts</h2>
+                <ul id="contacts"></ul>
+            </div>
         </div>
-        <div class="<col-md-6">
-          <h2>All contacts</h2>
-          <ul id="contacts"></ul>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Contact Details</h2>
+              
+            </div>
         </div>
-        <dic class="row">
-          <div class="col-md-12">
-            <h2>contact details</h2>
-          </div>
-        </div>
-      </div>
-
-      <h1>Address Book</h1>
-      <h2>Add a name</h2>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
